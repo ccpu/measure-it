@@ -202,6 +202,10 @@
     document.body.addEventListener("keyup", (e) => {
       if (e.keyCode === 27) manipulators.destroy();
     });
+
+    document.body.addEventListener("contextmenu", (e) => {
+      manipulators.destroy();
+    });
   };
 
   letsGo();
