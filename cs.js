@@ -151,11 +151,7 @@
       manipulators.selector.style.height = height + "px";
       manipulators.selector.style.width = width + "px";
 
-      if (width > 3 && height > 3) {
-        manipulators.lowerLabel.textContent = width + " x " + height;
-      } else {
-        manipulators.lowerLabel.textContent = "";
-      }
+      manipulators.lowerLabel.textContent = width + " x " + height;
 
       const labelRect = manipulators.lowerLabel.getBoundingClientRect();
 
