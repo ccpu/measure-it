@@ -162,11 +162,11 @@
         -labelRect.height - labelDis + "px";
 
       // move bottom label inside if no space in left
-      if (x1 < 37 || x2 < 37) {
+      if (x1 < labelRect.width || x2 < labelRect.width) {
         manipulators.lowerLabel.style.left = 0;
       }
 
-      if (window.innerHeight <= y2 + 20) {
+      if (window.innerHeight <= y2 + labelRect.height) {
         manipulators.lowerLabel.style.bottom = 0;
       }
     },
